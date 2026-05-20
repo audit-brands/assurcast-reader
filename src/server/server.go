@@ -49,9 +49,10 @@ func (s *Server) Start() {
 	s.worker.FindFavicons()
 	s.worker.StartFeedCleaner()
 	s.worker.SetRefreshRate(refreshRate)
-	if refreshRate > 0 {
-		s.worker.RefreshFeeds()
-	}
+	// Always trigger an initial refresh on startup so users see items immediately
+	// — important for the pre-seeded Assurcast feed bundle. RefreshFeeds is a
+	// no-op when the feed list is empty, so this is safe regardless.
+	s.worker.RefreshFeeds()
 
 	httpserver := &http.Server{Addr: s.Addr, Handler: s.handler()}
 

@@ -27,11 +27,13 @@ func (s *Storage) SeedDefaultSubscriptions() {
 	seeds := []struct {
 		title, link, feedLink string
 	}{
-		{"All Stories", "https://assurcast.com/", "https://assurcast.com/feed"},
-		{"News & Blogs", "https://assurcast.com/category/news", "https://assurcast.com/feed/category/news"},
-		{"Events & CPE", "https://assurcast.com/category/events", "https://assurcast.com/feed/category/events"},
-		{"Tools & Technology", "https://assurcast.com/category/tools", "https://assurcast.com/feed/category/tools"},
-		{"Careers & Talent", "https://assurcast.com/category/careers", "https://assurcast.com/feed/category/careers"},
+		{"All Stories", "https://assurcast.com/", "https://assurcast.com/feed.rss"},
+		{"Events", "https://assurcast.com/category/events", "https://assurcast.com/feed/category/events.rss"},
+		{"IIA Standards", "https://assurcast.com/category/iia-standards", "https://assurcast.com/feed/category/iia-standards.rss"},
+		{"Jobs", "https://assurcast.com/jobs", "https://assurcast.com/feed/jobs.rss"},
+		{"News and Blogs", "https://assurcast.com/category/news", "https://assurcast.com/feed/category/news.rss"},
+		{"Social and Media", "https://assurcast.com/category/social", "https://assurcast.com/feed/category/social.rss"},
+		{"Tools and Tech", "https://assurcast.com/category/tools", "https://assurcast.com/feed/category/tools.rss"},
 	}
 
 	for _, seed := range seeds {

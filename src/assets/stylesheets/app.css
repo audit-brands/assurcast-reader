@@ -84,6 +84,13 @@ select.form-control:not([multiple]):not([size]) {
   outline: none;
 }
 
+/* Theme picker buttons: keep all rows visually equal regardless of which
+   row contains the selected (check-iconed) button. Without this, the row
+   without a check collapses to ~13px and reads as a colored stripe. */
+.settings-dropdown .row .btn-link[class*="theme-"] {
+  min-height: 2.25rem;
+}
+
 .popover:focus {
   outline: none;
 }

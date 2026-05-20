@@ -515,6 +515,92 @@ a,
   border-color: #1a1a1a;
 }
 
+/* theme: assurcast-light — Assurcast brand light (warm paper + terracotta) */
+
+.theme-assurcast-light,
+.theme-assurcast-light .btn-default,
+.theme-assurcast-light .dropdown-menu,
+.theme-assurcast-light .form-control,
+.theme-assurcast-light .modal-content,
+.theme-assurcast-light .toolbar-search {
+  color: #2d3039;
+  background-color: #fafaf6;
+}
+.theme-assurcast-light .content hr,
+.theme-assurcast-light .content pre,
+.theme-assurcast-light .border-right,
+.theme-assurcast-light .border-top {
+  border-color: #e5e5e0 !important;
+}
+.theme-assurcast-light .selectgroup-label:hover,
+.theme-assurcast-light .toolbar-item:hover,
+.theme-assurcast-light .toolbar-search:hover,
+.theme-assurcast-light .dropdown-item:hover,
+.theme-assurcast-light .toolbar-search:focus {
+  background-color: #eeeeea;
+}
+.theme-assurcast-light a,
+.theme-assurcast-light .btn-link:hover {
+  color: #b65f43;
+}
+.theme-assurcast-light .toolbar-item.active,
+.theme-assurcast-light .dropdown-item.active,
+.theme-assurcast-light .dropdown-item:active,
+.theme-assurcast-light .selectgroup input:checked + .selectgroup-label {
+  color: #fff;
+  background-color: #b65f43 !important;
+}
+.theme-assurcast-light .btn-default:focus,
+.theme-assurcast-light .form-control:focus {
+  border-color: #b65f43;
+}
+
+/* theme: assurcast-dark — Assurcast brand dark (warm charcoal + terracotta) */
+
+.theme-assurcast-dark,
+.theme-assurcast-dark .btn-default,
+.theme-assurcast-dark .dropdown-menu,
+.theme-assurcast-dark .dropdown-item,
+.theme-assurcast-dark .form-control,
+.theme-assurcast-dark .modal-content,
+.theme-assurcast-dark .toolbar-search {
+  color: #e5e3dc;
+  background-color: #2e2c25;
+}
+.theme-assurcast-dark .content hr,
+.theme-assurcast-dark .content pre,
+.theme-assurcast-dark .border-right,
+.theme-assurcast-dark .border-top,
+.theme-assurcast-dark .dropdown-divider {
+  border-color: #4b4840 !important;
+}
+.theme-assurcast-dark .selectgroup-label:hover,
+.theme-assurcast-dark .dropdown-item:hover,
+.theme-assurcast-dark .toolbar-item:hover,
+.theme-assurcast-dark .toolbar-search:hover,
+.theme-assurcast-dark .toolbar-search:focus {
+  background-color: #413e36;
+}
+.theme-assurcast-dark .dropdown-menu,
+.theme-assurcast-dark .modal-content {
+  border-color: #4b4840;
+}
+.theme-assurcast-dark a,
+.theme-assurcast-dark .btn-link:hover {
+  color: #dc9074;
+}
+.theme-assurcast-dark .toolbar-item.active,
+.theme-assurcast-dark .dropdown-item.active,
+.theme-assurcast-dark .dropdown-item:active,
+.theme-assurcast-dark .selectgroup input:checked + .selectgroup-label {
+  color: #2e2c25;
+  background-color: #dc9074 !important;
+}
+.theme-assurcast-dark .btn-default:focus,
+.theme-assurcast-dark .form-control:focus {
+  border-color: #dc9074;
+}
+
 /* animation */
 .indicator-enter-active, .indicator-leave-active {
   transition: all .3s;

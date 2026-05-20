@@ -1,40 +1,48 @@
-# narr
+# Assurcast Reader
 
-**narr** (not another rss reader) is a web-based RSS and Nostr long-form feed aggregator
-which can be used both as a desktop application and a personal self-hosted server.
+**Assurcast Reader** is a desktop and self-hosted RSS + Nostr long-form feed reader,
+purpose-built for internal audit and assurance professionals who want a clean way to
+follow [Assurcast](https://assurcast.com) and other industry sources.
 
-The app is a single binary with an embedded database (SQLite), it is based on
-[yarr](https://github.com/nkanaev/yarr).
+The app is a single binary with an embedded SQLite database. It is built on top of
+[narr](https://github.com/fiatjaf/narr) by fiatjaf, which is itself a fork of
+[yarr](https://github.com/nkanaev/yarr) by Nazar Kanaev.
 
 ![screenshot](etc/promo.png)
 
-## usage
+## install
 
 The latest prebuilt binaries for Linux/MacOS/Windows AMD64 are available
-[here](https://github.com/audit-brands/assurcast-reader/releases/latest). Installation instructions:
+[here](https://github.com/audit-brands/assurcast-reader/releases/latest).
 
 * MacOS
 
-  Download `narr-*-macos64.zip`, unzip it, place `narr.app` in `/Applications` folder, [open the app][macos-open], click the anchor menu bar icon, select "Open".
+  Download `assurcast-reader-*-macos64.zip`, unzip it, place `Assurcast Reader.app` in `/Applications`, [open the app][macos-open], click the menu bar icon, select "Open".
 
 * Windows
 
-  Download `narr-*-windows64.zip`, unzip it, open `narr.exe`, click the anchor system tray icon, select "Open".
+  Download `assurcast-reader-*-windows64.zip`, unzip it, open `assurcast-reader.exe`, click the system tray icon, select "Open".
 
 * Linux
 
-  Download `narr-*-linux64.zip`, unzip it, place `narr` in `$HOME/.local/bin`
-and run [the script](etc/install-linux.sh).
+  Download `assurcast-reader-*-linux64.zip`, unzip it, place `assurcast-reader` in `$HOME/.local/bin`
+  and run [the install script](etc/install-linux.sh).
 
 [macos-open]: https://support.apple.com/en-gb/guide/mac-help/mh40616/mac
 
-For self-hosting, see `narr -h` for auth, tls & server configuration flags.
+For self-hosting, see `assurcast-reader -h` for auth, tls & server configuration flags.
 
-See more:
+## see more
 
-* [Building from source code](doc/build.md)
+* [Building from source](doc/build.md)
 * [Fever API support](doc/fever.md)
 
 ## credits
 
-[Feather](http://feathericons.com/) for icons.
+* [narr](https://github.com/fiatjaf/narr) by fiatjaf — Nostr long-form support
+* [yarr](https://github.com/nkanaev/yarr) by Nazar Kanaev — original RSS reader
+* [Feather](http://feathericons.com/) — icons
+
+## license
+
+MIT — see [license](license).

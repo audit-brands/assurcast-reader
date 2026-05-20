@@ -30,7 +30,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: macos
-        path: _output/macos/narr.app
+        path: _output/macos/Assurcast Reader.app
 
   build_windows:
     name: Build for Windows
@@ -57,7 +57,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: windows
-        path: _output/windows/narr.exe
+        path: _output/windows/assurcast-reader.exe
 
   build_linux:
     name: Build for Linux
@@ -84,7 +84,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: linux
-        path: _output/linux/narr
+        path: _output/linux/assurcast-reader
 
   create_release:
     name: Create Release
@@ -109,20 +109,20 @@ jobs:
     - name: Preparation
       run: |
         ls -R
-        chmod u+x macos/Contents/MacOS/narr
-        chmod u+x linux/narr
+        chmod u+x "macos/Contents/MacOS/assurcast-reader"
+        chmod u+x linux/assurcast-reader
 
-        mv macos narr.app     && zip -r narr-macos.zip narr.app
-        mv windows/narr.exe . && zip narr-windows.zip narr.exe
-        mv linux/narr .       && zip narr-linux.zip narr
+        mv macos "Assurcast Reader.app" && zip -r assurcast-reader-macos.zip "Assurcast Reader.app"
+        mv windows/assurcast-reader.exe . && zip assurcast-reader-windows.zip assurcast-reader.exe
+        mv linux/assurcast-reader .      && zip assurcast-reader-linux.zip assurcast-reader
     - name: Upload MacOS
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./narr-macos.zip
-          asset_name: narr-${{ github.ref }}-macos64.zip
+          asset_path: ./assurcast-reader-macos.zip
+          asset_name: assurcast-reader-${{ github.ref }}-macos64.zip
           asset_content_type: application/zip
     - name: Upload Windows
       uses: actions/upload-release-asset@v1
@@ -130,8 +130,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./narr-windows.zip
-          asset_name: narr-${{ github.ref }}-windows64.zip
+          asset_path: ./assurcast-reader-windows.zip
+          asset_name: assurcast-reader-${{ github.ref }}-windows64.zip
           asset_content_type: application/zip
     - name: Upload Linux
       uses: actions/upload-release-asset@v1
@@ -139,6 +139,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./narr-linux.zip
-          asset_name: narr-${{ github.ref }}-linux64.zip
+          asset_path: ./assurcast-reader-linux.zip
+          asset_name: assurcast-reader-${{ github.ref }}-linux64.zip
           asset_content_type: application/zip

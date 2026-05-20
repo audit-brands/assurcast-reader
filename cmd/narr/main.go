@@ -60,14 +60,14 @@ func main() {
 		fmt.Fprintln(out, " ", strings.Join(OptList, ", "))
 	}
 
-	flag.StringVar(&addr, "addr", opt("NARR_ADDR", "127.0.0.1:7049"), "address to run server on")
-	flag.StringVar(&basepath, "base", opt("NARR_BASE", ""), "base path of the service url")
-	flag.StringVar(&authfile, "auth-file", opt("NARR_AUTHFILE", ""), "`path` to a file containing username:password. Takes precedence over --auth (or NARR_AUTH)")
-	flag.StringVar(&auth, "auth", opt("NARR_AUTH", ""), "string with username and password in the format `username:password`")
-	flag.StringVar(&certfile, "cert-file", opt("NARR_CERTFILE", ""), "`path` to cert file for https")
-	flag.StringVar(&keyfile, "key-file", opt("NARR_KEYFILE", ""), "`path` to key file for https")
-	flag.StringVar(&db, "db", opt("NARR_DB", ""), "storage file `path`")
-	flag.StringVar(&logfile, "log-file", opt("NARR_LOGFILE", ""), "`path` to log file to use instead of stdout")
+	flag.StringVar(&addr, "addr", opt("ASSURCAST_ADDR", "127.0.0.1:7049"), "address to run server on")
+	flag.StringVar(&basepath, "base", opt("ASSURCAST_BASE", ""), "base path of the service url")
+	flag.StringVar(&authfile, "auth-file", opt("ASSURCAST_AUTHFILE", ""), "`path` to a file containing username:password. Takes precedence over --auth (or ASSURCAST_AUTH)")
+	flag.StringVar(&auth, "auth", opt("ASSURCAST_AUTH", ""), "string with username and password in the format `username:password`")
+	flag.StringVar(&certfile, "cert-file", opt("ASSURCAST_CERTFILE", ""), "`path` to cert file for https")
+	flag.StringVar(&keyfile, "key-file", opt("ASSURCAST_KEYFILE", ""), "`path` to key file for https")
+	flag.StringVar(&db, "db", opt("ASSURCAST_DB", ""), "storage file `path`")
+	flag.StringVar(&logfile, "log-file", opt("ASSURCAST_LOGFILE", ""), "`path` to log file to use instead of stdout")
 	flag.BoolVar(&ver, "version", false, "print application version")
 	flag.BoolVar(&open, "open", false, "open the server in browser")
 	flag.Parse()
@@ -95,7 +95,7 @@ func main() {
 			log.Fatal("Failed to get config dir: ", err)
 		}
 
-		storagePath := filepath.Join(configPath, "narr")
+		storagePath := filepath.Join(configPath, "assurcast-reader")
 		if err := os.MkdirAll(storagePath, 0755); err != nil {
 			log.Fatal("Failed to create app config dir: ", err)
 		}

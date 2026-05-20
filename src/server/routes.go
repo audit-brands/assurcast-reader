@@ -83,9 +83,9 @@ func (s *Server) handleStatic(c *router.Context) {
 func (s *Server) handleManifest(c *router.Context) {
 	c.JSON(http.StatusOK, map[string]interface{}{
 		"$schema":     "https://json.schemastore.org/web-manifest-combined.json",
-		"name":        "narr!",
-		"short_name":  "narr",
-		"description": "yet another rss reader",
+		"name":        "Assurcast Reader",
+		"short_name":  "Assurcast",
+		"description": "RSS and Nostr long-form reader for audit and assurance",
 		"display":     "standalone",
 		"start_url":   s.BasePath,
 		"icons": []map[string]interface{}{

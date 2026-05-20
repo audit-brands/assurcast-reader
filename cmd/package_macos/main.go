@@ -16,17 +16,17 @@ var plist = `<?xml version="1.0" encoding="UTF-8"?>
 <plist version="1.0">
 <dict>
 	<key>CFBundleName</key>
-	<string>narr</string>
+	<string>Assurcast Reader</string>
 	<key>CFBundleDisplayName</key>
-	<string>narr</string>
+	<string>Assurcast Reader</string>
 	<key>CFBundleIdentifier</key>
-	<string>fiatjaf.narr</string>
+	<string>com.audit-brands.assurcast-reader</string>
 	<key>CFBundleVersion</key>
 	<string>VERSION</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleExecutable</key>
-	<string>narr</string>
+	<string>assurcast-reader</string>
 
 	<key>CFBundleIconFile</key>
 	<string>icon</string>
@@ -41,7 +41,7 @@ var plist = `<?xml version="1.0" encoding="UTF-8"?>
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2020 fiatjaf. All rights reserved.</string>
+	<string>Copyright © 2026 Audit Risk Media. Based on narr by fiatjaf and yarr by Nazar Kanaev. MIT licensed.</string>
 </dict>
 </plist>
 `
@@ -60,13 +60,14 @@ func main() {
 	flag.StringVar(&outdir, "outdir", "", "")
 	flag.Parse()
 
-	outfile := "narr"
+	outfile := "assurcast-reader"
+	appBundle := "Assurcast Reader.app"
 
-	binDir := path.Join(outdir, "narr.app", "Contents/MacOS")
-	resDir := path.Join(outdir, "narr.app", "Contents/Resources")
+	binDir := path.Join(outdir, appBundle, "Contents/MacOS")
+	resDir := path.Join(outdir, appBundle, "Contents/Resources")
 
-	plistFile := path.Join(outdir, "narr.app", "Contents/Info.plist")
-	pkginfoFile := path.Join(outdir, "narr.app", "Contents/PkgInfo")
+	plistFile := path.Join(outdir, appBundle, "Contents/Info.plist")
+	pkginfoFile := path.Join(outdir, appBundle, "Contents/PkgInfo")
 
 	os.MkdirAll(binDir, 0700)
 	os.MkdirAll(resDir, 0700)

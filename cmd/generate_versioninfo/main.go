@@ -14,13 +14,13 @@ BEGIN
   BEGIN
     BLOCK "080904E4"
     BEGIN
-      VALUE "CompanyName", "Tabajara Inc"
-      VALUE "FileDescription", "Not another RSS reader"
+      VALUE "CompanyName", "Audit Risk Media"
+      VALUE "FileDescription", "Assurcast Reader — RSS and Nostr long-form reader"
       VALUE "FileVersion", "{VERSION}"
-      VALUE "InternalName", "narr"
-      VALUE "LegalCopyright", "fiatjaf"
-      VALUE "OriginalFilename", "narr.exe"
-      VALUE "ProductName", "narr"
+      VALUE "InternalName", "assurcast-reader"
+      VALUE "LegalCopyright", "© 2026 Audit Risk Media. MIT licensed."
+      VALUE "OriginalFilename", "assurcast-reader.exe"
+      VALUE "ProductName", "Assurcast Reader"
       VALUE "ProductVersion", "{VERSION}"
     END
   END

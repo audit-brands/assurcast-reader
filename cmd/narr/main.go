@@ -131,6 +131,7 @@ func main() {
 	if err != nil {
 		log.Fatal("Failed to initialise database: ", err)
 	}
+	store.SeedDefaultSubscriptions()
 
 	worker.SetVersion(Version)
 	srv := server.NewServer(store, addr)

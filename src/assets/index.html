@@ -110,6 +110,10 @@
                         <span class="icon mr-1">{% inline "help-circle.svg" %}</span>
                         Shortcuts
                     </button>
+                    <button class="dropdown-item" @click="showSettings('about')">
+                        <span class="icon mr-1">{% inline "alert-circle.svg" %}</span>
+                        About
+                    </button>
                     <div class="dropdown-divider" v-if="authenticated"></div>
                     <button class="dropdown-item" v-if="authenticated" @click="logout()">
                         <span class="icon mr-1">{% inline "log-out.svg" %}</span>
@@ -419,6 +423,25 @@
                     <tr><td><kbd>f</kbd> <kbd>b</kbd></td>  <td>scroll content forward / backward</td>
                     </tr>
                 </table>
+            </div>
+            <div v-else-if="settings=='about'">
+                <p class="cursor-default"><b>About Assurcast Reader</b></p>
+
+                <p>An RSS and Nostr long-form reader for internal audit and assurance
+                   professionals, maintained by
+                   <a href="https://assurcast.com" target="_blank" rel="noopener">Assurcast</a>.</p>
+
+                <p class="mb-2"><b>Built on</b></p>
+                <ul class="pl-3 mb-3">
+                    <li><a href="https://github.com/fiatjaf/narr" target="_blank" rel="noopener">narr</a> by fiatjaf — Nostr long-form support</li>
+                    <li><a href="https://github.com/nkanaev/yarr" target="_blank" rel="noopener">yarr</a> by Nazar Kanaev — original RSS reader</li>
+                    <li><a href="https://feathericons.com/" target="_blank" rel="noopener">Feather</a> — icons</li>
+                </ul>
+
+                <p class="mb-0">
+                    MIT licensed.
+                    <a href="https://github.com/audit-brands/assurcast-reader" target="_blank" rel="noopener" class="float-right">Source on GitHub</a>
+                </p>
             </div>
         </modal>
     </div>

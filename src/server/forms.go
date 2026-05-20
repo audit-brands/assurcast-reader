@@ -1,6 +1,6 @@
 package server
 
-import "github.com/fiatjaf/narr/src/storage"
+import "github.com/audit-brands/assurcast-reader/src/storage"
 
 type ItemUpdateForm struct {
 	Status *storage.ItemStatus `json:"status,omitempty"`

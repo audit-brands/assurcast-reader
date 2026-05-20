@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fiatjaf/narr/src/parser"
+	"github.com/audit-brands/assurcast-reader/src/parser"
 	"github.com/nbd-wtf/go-nostr"
 	"github.com/nbd-wtf/go-nostr/nip05"
 	"github.com/nbd-wtf/go-nostr/nip19"

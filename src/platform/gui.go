@@ -4,8 +4,8 @@
 package platform
 
 import (
-	"github.com/fiatjaf/narr/src/server"
-	"github.com/fiatjaf/narr/src/systray"
+	"github.com/audit-brands/assurcast-reader/src/server"
+	"github.com/audit-brands/assurcast-reader/src/systray"
 )
 
 func Start(s *server.Server) {

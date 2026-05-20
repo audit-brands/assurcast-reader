@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/fiatjaf/narr/src/server/router"
+	"github.com/audit-brands/assurcast-reader/src/server/router"
 )
 
 type gzipResponseWriter struct {

@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/fiatjaf/narr/src/content/readability"
+	"github.com/audit-brands/assurcast-reader/src/content/readability"
 )
 
 func main() {

@@ -11,17 +11,17 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fiatjaf/narr/src/assets"
-	"github.com/fiatjaf/narr/src/content/htmlutil"
-	"github.com/fiatjaf/narr/src/content/readability"
-	"github.com/fiatjaf/narr/src/content/sanitizer"
-	"github.com/fiatjaf/narr/src/content/silo"
-	"github.com/fiatjaf/narr/src/server/auth"
-	"github.com/fiatjaf/narr/src/server/gzip"
-	"github.com/fiatjaf/narr/src/server/opml"
-	"github.com/fiatjaf/narr/src/server/router"
-	"github.com/fiatjaf/narr/src/storage"
-	"github.com/fiatjaf/narr/src/worker"
+	"github.com/audit-brands/assurcast-reader/src/assets"
+	"github.com/audit-brands/assurcast-reader/src/content/htmlutil"
+	"github.com/audit-brands/assurcast-reader/src/content/readability"
+	"github.com/audit-brands/assurcast-reader/src/content/sanitizer"
+	"github.com/audit-brands/assurcast-reader/src/content/silo"
+	"github.com/audit-brands/assurcast-reader/src/server/auth"
+	"github.com/audit-brands/assurcast-reader/src/server/gzip"
+	"github.com/audit-brands/assurcast-reader/src/server/opml"
+	"github.com/audit-brands/assurcast-reader/src/server/router"
+	"github.com/audit-brands/assurcast-reader/src/storage"
+	"github.com/audit-brands/assurcast-reader/src/worker"
 )
 
 func (s *Server) handler() http.Handler {

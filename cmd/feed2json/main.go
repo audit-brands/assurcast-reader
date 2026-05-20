@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/fiatjaf/narr/src/parser"
+	"github.com/audit-brands/assurcast-reader/src/parser"
 )
 
 func main() {

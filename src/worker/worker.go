@@ -6,7 +6,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fiatjaf/narr/src/storage"
+	"github.com/audit-brands/assurcast-reader/src/storage"
 )
 
 const NUM_WORKERS = 4

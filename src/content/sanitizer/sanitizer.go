@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fiatjaf/narr/src/content/htmlutil"
+	"github.com/audit-brands/assurcast-reader/src/content/htmlutil"
 	"golang.org/x/net/html"
 )
 

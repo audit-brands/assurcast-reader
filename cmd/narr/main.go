@@ -10,10 +10,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/fiatjaf/narr/src/platform"
-	"github.com/fiatjaf/narr/src/server"
-	"github.com/fiatjaf/narr/src/storage"
-	"github.com/fiatjaf/narr/src/worker"
+	"github.com/audit-brands/assurcast-reader/src/platform"
+	"github.com/audit-brands/assurcast-reader/src/server"
+	"github.com/audit-brands/assurcast-reader/src/storage"
+	"github.com/audit-brands/assurcast-reader/src/worker"
 )
 
 var Version string = "0.0.0-manual"

@@ -10,9 +10,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/fiatjaf/narr/src/content/scraper"
-	"github.com/fiatjaf/narr/src/parser"
-	"github.com/fiatjaf/narr/src/storage"
+	"github.com/audit-brands/assurcast-reader/src/content/scraper"
+	"github.com/audit-brands/assurcast-reader/src/parser"
+	"github.com/audit-brands/assurcast-reader/src/storage"
 	"golang.org/x/net/html/charset"
 )
 

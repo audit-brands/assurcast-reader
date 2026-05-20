@@ -1,4 +1,4 @@
-module github.com/fiatjaf/narr
+module github.com/audit-brands/assurcast-reader
 
 go 1.23.3
 

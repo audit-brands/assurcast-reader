@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fiatjaf/narr/src/server/auth"
-	"github.com/fiatjaf/narr/src/server/router"
-	"github.com/fiatjaf/narr/src/storage"
+	"github.com/audit-brands/assurcast-reader/src/server/auth"
+	"github.com/audit-brands/assurcast-reader/src/server/router"
+	"github.com/audit-brands/assurcast-reader/src/storage"
 )
 
 type FeverGroup struct {

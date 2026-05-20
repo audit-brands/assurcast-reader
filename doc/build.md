@@ -2,7 +2,7 @@
 
 Install `Go >= 1.23`, then get the source code:
 
-    git clone https://github.com/fiatjaf/narr.git
+    git clone https://github.com/audit-brands/assurcast-reader.git
 
 Then run one of the corresponding commands:
 

@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/fiatjaf/narr/src/storage"
-	"github.com/fiatjaf/narr/src/worker"
+	"github.com/audit-brands/assurcast-reader/src/storage"
+	"github.com/audit-brands/assurcast-reader/src/worker"
 )
 
 type Server struct {

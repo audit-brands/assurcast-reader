@@ -11,7 +11,7 @@ The app is a single binary with an embedded database (SQLite), it is based on
 ## usage
 
 The latest prebuilt binaries for Linux/MacOS/Windows AMD64 are available
-[here](https://github.com/fiatjaf/narr/releases/latest). Installation instructions:
+[here](https://github.com/audit-brands/assurcast-reader/releases/latest). Installation instructions:
 
 * MacOS
 

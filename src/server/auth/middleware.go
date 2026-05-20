@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/fiatjaf/narr/src/assets"
-	"github.com/fiatjaf/narr/src/server/router"
-	"github.com/fiatjaf/narr/src/storage"
+	"github.com/audit-brands/assurcast-reader/src/assets"
+	"github.com/audit-brands/assurcast-reader/src/server/router"
+	"github.com/audit-brands/assurcast-reader/src/storage"
 )
 
 type Middleware struct {

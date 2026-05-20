@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/fiatjaf/narr/src/storage"
+	"github.com/audit-brands/assurcast-reader/src/storage"
 )
 
 func TestStatic(t *testing.T) {

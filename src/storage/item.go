@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fiatjaf/narr/src/content/htmlutil"
+	"github.com/audit-brands/assurcast-reader/src/content/htmlutil"
 )
 
 type ItemStatus int

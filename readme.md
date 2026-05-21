@@ -8,7 +8,7 @@ The app is a single binary with an embedded SQLite database. It is built on top 
 [narr](https://github.com/fiatjaf/narr) by fiatjaf, which is itself a fork of
 [yarr](https://github.com/nkanaev/yarr) by Nazar Kanaev.
 
-![screenshot](etc/promo.png)
+![Assurcast Reader screenshot](etc/assurcast-reader.png)
 
 ## install
 

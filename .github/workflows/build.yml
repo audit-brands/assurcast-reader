@@ -14,9 +14,15 @@ jobs:
       with:
         submodules: 'recursive'
     - name: "Setup Go"
-      uses: actions/setup-go@v2
+      uses: actions/setup-go@v5
       with:
-        go-version: '^1.17'
+        # Read the Go version from go.mod so CI auto-tracks the toolchain
+        # whenever the module's go directive changes. Avoids the drift bug
+        # where workflow said 1.17 but go.mod required 1.23.
+        go-version-file: 'go.mod'
+        # Explicit actions/cache step below handles module + build cache,
+        # so disable setup-go's built-in cache to prevent double-caching.
+        cache: false
     - name: Cache Go Modules
       uses: actions/cache@v3
       with:
@@ -41,9 +47,15 @@ jobs:
       with:
         submodules: 'recursive'
     - name: "Setup Go"
-      uses: actions/setup-go@v2
+      uses: actions/setup-go@v5
       with:
-        go-version: '^1.17'
+        # Read the Go version from go.mod so CI auto-tracks the toolchain
+        # whenever the module's go directive changes. Avoids the drift bug
+        # where workflow said 1.17 but go.mod required 1.23.
+        go-version-file: 'go.mod'
+        # Explicit actions/cache step below handles module + build cache,
+        # so disable setup-go's built-in cache to prevent double-caching.
+        cache: false
     - name: Cache Go Modules
       uses: actions/cache@v3
       with:
@@ -68,9 +80,15 @@ jobs:
       with:
         submodules: 'recursive'
     - name: "Setup Go"
-      uses: actions/setup-go@v2
+      uses: actions/setup-go@v5
       with:
-        go-version: '^1.17'
+        # Read the Go version from go.mod so CI auto-tracks the toolchain
+        # whenever the module's go directive changes. Avoids the drift bug
+        # where workflow said 1.17 but go.mod required 1.23.
+        go-version-file: 'go.mod'
+        # Explicit actions/cache step below handles module + build cache,
+        # so disable setup-go's built-in cache to prevent double-caching.
+        cache: false
     - name: Cache Go Modules
       uses: actions/cache@v3
       with:

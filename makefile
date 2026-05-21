@@ -1,4 +1,7 @@
-VERSION=$(shell git describe --tags | sed 's/^.\(.*\)/\1/')
+# Extract X.Y.Z from the git-describe output. Works for v0.1.0,
+# test-0.1.0-rc1, v1.2.3-4-gabcdef, etc. Upstream stripped only the
+# first character which mangled non-'v' prefixes and broke windres.
+VERSION=$(shell git describe --tags 2>/dev/null | grep -oE '[0-9]+\.[0-9]+\.[0-9]+' | head -1)
 
 GO_LDFLAGS = -s -w -X 'main.Version=$(VERSION)'
 

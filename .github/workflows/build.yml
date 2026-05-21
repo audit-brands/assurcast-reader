@@ -110,6 +110,11 @@ jobs:
   create_release:
     name: Create Release
     runs-on: ubuntu-latest
+    # GITHUB_TOKEN defaults to read-only on newer GitHub orgs; create-release
+    # and upload-release-asset both need contents:write to publish a Release
+    # and attach assets. Scoped to this job so build jobs stay least-privilege.
+    permissions:
+      contents: write
     if: ${{ !contains(github.ref, 'test') }}
     needs: [build_macos, build_windows, build_linux]
     steps:
